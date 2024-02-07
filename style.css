@@ -1,0 +1,79 @@
+#header{
+    background-color: rgb(5, 146, 146);
+    color: white;
+    height:150px;
+    position:relative;
+    top:0px;
+    width:100%;
+    padding-top: 10px;
+}
+#header h1{
+    text-align: center;
+    font-size:50px;
+}
+#maincontainer{
+    display: flex;
+    justify-content: center;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+#maincontainer div{
+    width:50%;
+    height:500px;
+    border: 1px solid black;
+}
+table,tr,th,td{
+    border-collapse: collapse;
+}
+table{
+    width:100%;
+    height: 100%;
+}
+#maincontainer button{
+    width:100%;
+    height:100%;
+    opacity: 100%;
+    font-weight: bold;
+    font-size: 15px;
+}
+#maincontainer input{
+    width:99%;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+.num{
+    background-color:burlywood;
+    color:black;
+}
+.op{
+    background-color: aqua;
+}
+#display{
+    height: 150px;
+}
+#right{
+    background-color: rgb(0, 37, 77);
+    color: white;
+    border-left: 5px solid white;
+}
+#right div{
+    border-style: none;
+    overflow-y: auto;
+}
+#right h3{
+    font-size: 30px;
+}
+#historymain ul{
+    font-size: 20px;
+}
+#right button{
+    background-color: rgb(0, 37, 77);
+    color: white;
+    width: 50px;
+    font-size: 30px;
+}

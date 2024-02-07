@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a298fb5479.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Calculator <i class="fa-solid fa-calculator fa-2xl"></i></h1>
+    </div>
+    <div id="maincontainer">
+        <div>
+            <table>
+                <tr>
+                    <td colspan="5" id="display"><input type="textarea" id="displayarea" readonly></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button type="button" onclick="allclear()" style="background-color: red; color: aliceblue;">AC</button></td>
+                    <td colspan="2"><button type="button" onclick="clearchar()" style="background-color: yellow;">C</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="add(' % ')" class="op">%</button></td>
+                    <td><button type="button" onclick="add('(')" class="op">(</button></td>
+                    <td><button type="button" onclick="add(')')" class="op">)</button></td>
+                    <td colspan="2"><button type="button" onclick="solve()" style="background-color: greenyellow;"><i class="fa-solid fa-equals"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="add('7')" class="num">7</button></td>
+                    <td><button type="button" onclick="add('8')" class="num">8</button></td>
+                    <td><button type="button" onclick="add('9')" class="num">9</button></td>
+                    <td rowspan="2"><button type="button" onclick="add(' + ')" class="op"><i class="fa-solid fa-plus"></i></button></td>
+                    <td rowspan="2"><button type="button" onclick="add(' - ')" class="op"><i class="fa-solid fa-minus"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="add('4')" class="num">4</button></td>
+                    <td><button type="button" onclick="add('5')" class="num">5</button></td>
+                    <td><button type="button" onclick="add('6')" class="num">6</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="add('1')" class="num">1</button></td>
+                    <td><button type="button" onclick="add('2')" class="num">2</button></td>
+                    <td><button type="button" onclick="add('3')" class="num">3</button></td>
+                    <td rowspan="2"><button type="button" onclick="add(' * ')" class="op"><i class="fa-solid fa-xmark"></i></button></td>
+                    <td rowspan="2"><button type="button" onclick="add(' / ')" class="op"><i class="fa-solid fa-divide"></i></button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" onclick="add('0')" class="num">0</button></td>
+                    <td><button type="button" onclick="add('.')" class="num">.</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="right">
+            <h3 style="text-align: center;">History</h3>
+            <p style="text-align: right;"><button type="button" onclick="historyclear()"><i class="fa-solid fa-trash"></i></button></p>
+            <div id="historymain" style="height: 300px;width: 100%;">
+                <ul type="none" id="historyarea">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="process.js"></script>
+</body>
+</html>
